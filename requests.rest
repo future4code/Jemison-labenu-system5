@@ -1,0 +1,32 @@
+### Endpoint de Pegar todas as Turmas
+GET http://localhost:3003/turma
+
+### Endpoint de Pegar todas as Turmas Ativas
+GET http://localhost:3003/turma?status=6
+
+### Endpoint de criar turmas
+POST http://localhost:3003/turma
+Content-Type: application/json
+
+{
+    "nome":"teste"
+}
+
+### Endpoint de mudar turmas de módulo
+PUT http://localhost:3003/turma/5612
+Content-Type: application/json
+
+{
+    "modulo": "1"
+}
+
+### Endpoint de criar estudante
+POST http://localhost:3003/estudante
+Content-Type: application/json
+
+{
+   "nome":"Marcos Julio",
+   "email":"marcosjulio10@outlook.com",
+   "data_nasc":"10/10/1983",
+   "hobbies": ["Andar de cavalo"]
+}
